@@ -7,7 +7,7 @@ export type todoType={
     isDone: boolean,
 }
 const getTodos =async () => {
-    let todos = await fetch("http://localhost:3001/api/todo/list");
+    let todos = await fetch("https://todo-api-proj.vercel.app/api/todo/list");
     return todos.json();
 }
 

@@ -7,7 +7,8 @@ const nextConfig = {
     return[
       {
         source:"/api/:path*",
-        destination:"http://localhost:3001/api/:path*"
+        destination:"https://todo-api-proj.vercel.app/api/:path*"
+        //"http://localhost:3001/api/:path*"
       }
     ];
   }

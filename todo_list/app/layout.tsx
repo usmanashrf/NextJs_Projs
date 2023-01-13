@@ -1,4 +1,5 @@
 //import './globals.css'
+import bg from "./psbg.png";
 
 export default function RootLayout({
   children,
@@ -12,7 +13,12 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body><h2>Usman's Todo List</h2>
+      <body  style={{backgroundImage: `url(${bg.src})`,backgroundRepeat: 'no-repeat',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+    width: '100vw'}}>
         {children}
         </body>
     </html>

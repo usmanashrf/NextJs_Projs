@@ -14,7 +14,7 @@ export default function AddNewTodo(){
     let [name,setname]= useState("");
 
     return(
-        <div>
+        <div >
 <input type="text" onChange={(e)=> setname(e.target.value)} value={name}></input>
 
 <button onClick={async()=>{
