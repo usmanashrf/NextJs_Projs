@@ -13,10 +13,9 @@ const getTodos =async () => {
 
 export default async function TodoList(){
     const {todos} = await getTodos();
-    console.log(todos);
     return(<div>
         <ul style={{listStyleType:"none",padding:0}}>
-          { todos.map((t:todoType[])=> {
+          { todos.map((t)=> {
             return(
           <Todo prop={t} ></Todo>
             )
