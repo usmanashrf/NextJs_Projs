@@ -1,7 +1,7 @@
 import {CheckIcon} from './icons'
 export default function Pricing(){
     return(
-        <div className="flex bg-white-900 mx-80 h-80 -mt-16  md:place-content-start sm:place-content-center">
+        <div className="flex bg-white-900 mx-80 h-80 -mt-24  md:place-content-start sm:place-content-center border-b-4 border-gray-300">
         <div className="bg-purple-50 w-2/5 grid  md:place-content-center rounded justify-center">
         <div className="text-lg font-bold mt-4 justify-center place-content-center px-8">Premium PRO</div>
         <div className="text-5xl font-bold  mt-2 justify-center place-content-center px-8">$329</div>
