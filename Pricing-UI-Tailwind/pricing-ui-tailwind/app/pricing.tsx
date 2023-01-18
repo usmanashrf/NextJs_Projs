@@ -1,3 +1,4 @@
+import {CheckIcon} from './icons'
 export default function Pricing(){
     return(
         <div className="flex bg-white-900 mx-80 h-80 -mt-16  md:place-content-start sm:place-content-center">
@@ -10,6 +11,14 @@ export default function Pricing(){
         <div className="w-3/5 bg-white -ml-1 rounded pt-12 pl-3 mr-3">
         <div>
             <p>Access these features when you get this pricing package for your business.</p>
+        </div>
+        <div>
+            <ul className='pt-4 pl-2'>
+                <li className='flex mt-4'> <CheckIcon/> <p className='ml-2'>International calling and messaging API</p></li>
+                <li className='flex mt-4'> <CheckIcon/> <p className='ml-2'>Additional phone numbers</p></li>
+                <li className='flex mt-4'> <CheckIcon/> <p className='ml-2'>Automated messages via Zapier</p></li>
+                <li className='flex mt-4'> <CheckIcon/> <p className='ml-2'>24/7 support and consulting</p></li>
+            </ul>
         </div>
         </div>
         </div>
