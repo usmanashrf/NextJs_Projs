@@ -1,17 +1,29 @@
 'use client';
 import { todoType } from "./todo-list";
 import { useRouter } from "next/navigation";
+import { useState, useEffect } from 'react'
 
 async function update(id, isDone, refresh){
-    await fetch('/api/todo/update',
+    // await fetch('/api/todo/update',
+    // {method:"POST",
+    // body: JSON.stringify({id,isDone})});
+  
+    useEffect(() => {
+    fetch('/api/todo/update',
     {method:"POST",
-    body: JSON.stringify({id,isDone})});
+    body: JSON.stringify({id,isDone})})
+    }, []);
     refresh();
 }
 
 async function deleteToDO(id, refersh) {
-    await fetch(`/api/todo/delete?id=${id}`,{method:"DELETE"});
-    refersh();
+   // await fetch(`/api/todo/delete?id=${id}`,{method:"DELETE"});
+   useEffect(() => {
+    fetch(`/api/todo/delete?id=${id}`,
+    {method:"DELETE"})
+    }, []); 
+   
+   refersh();
 }
 export default function Todo(prop){
     const router = useRouter();

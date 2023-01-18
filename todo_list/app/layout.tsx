@@ -1,5 +1,5 @@
 //import './globals.css'
-import bg from "./psbg.png";
+import bg from "./wbgp.jpg";
 
 export default function RootLayout({
   children,
