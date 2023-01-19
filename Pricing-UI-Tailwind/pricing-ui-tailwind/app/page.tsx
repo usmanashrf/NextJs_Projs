@@ -1,4 +1,4 @@
-import Footer from "./Destopfooter";
+import Footer from "./destopFooter";
 import Header from "./header";
 import Pricing from "./pricing";
 import MFooter from "./mobileFooter";
